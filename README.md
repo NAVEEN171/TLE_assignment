@@ -27,7 +27,7 @@ The application is currently deployed :
 
 This project consists of three repositories:
 
-1. **Frontend**: [https://github.com/NAVEEN171/Contests-tracker-frontend](https://github.com/NAVEEN171/Contests-tracker-frontend)
+1. **Frontend**: [https://github.com/NAVEEN171/Contests-Tracker](https://github.com/NAVEEN171/Contests-Tracker)
 2. **Backend**: [https://github.com/NAVEEN171/Contests-tracker-backend](https://github.com/NAVEEN171/Contests-tracker-backend)
 3. **Scraper**: [https://github.com/NAVEEN171/Contests-scraper](https://github.com/NAVEEN171/Contests-scraper)
 
