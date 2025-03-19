@@ -26,7 +26,7 @@ This project consists of three repositories:
 
 - **Frontend**: React.js, Redux, TailwindCSS
 - **Backend**: Node.js, Express.js, MongoDB (Aggregation Framework)
-- **Scraper**: Node.js, Cheerio (Web Scraping), YouTube Data API
+- **Scraper**: Python, Playwright (Web Scraping), YouTube Data API
 
 ## 📊 Data Flow & Scraping Process
 
