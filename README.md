@@ -1,24 +1,27 @@
-# TLE_assignment
-
 # Competitive Programming Contest Tracker
 
 A full-stack MERN application that helps programmers keep track of coding contests across multiple platforms, discover solutions, and manage their competitive programming journey.
 
+## 🚀 Current Deployment Status
+
+The application is currently deployed and functional with most features available at:
+[https://contests-tracker-nu.vercel.app/](https://contests-tracker-nu.vercel.app/)
+
+> **Note:** The automated 24-hour contest update scraping feature is implemented in code but not yet deployed to production. Contest data is currently being manually updated until the automated scraper deployment is completed.
+
 ## 🌟 Features
 
 - **Multi-Platform Support**: Track contests from CodeChef, CodeForces, and LeetCode
-- **Real-Time Updates**: Contests are updated every 24 hours via automated scraping
 - **Advanced Filtering System**: Filter contests by status, platform, date range, duration, and more
-- **Contest Solutions**: Automatically fetches high-quality YouTube solutions for past contests
+- **Contest Solutions**: Access to high-quality YouTube solutions for past contests
 - **Saved Contests**: Save contests to revisit them later
 - **Dark Mode Support**: Toggle between light and dark themes
 - **Fully Responsive**: Works seamlessly across all devices
 
-## Live Link
-https://contests-tracker-nu.vercel.app/
 
-## Product Walkthrough Video
-**Product walkthrough link**:- https://drive.google.com/file/d/12PD7j3W32QiHQVJhubAGuYP6NshRGKFQ/view?usp=sharing
+
+## Product Walkthrough
+**Product walkthrough video**: [Watch here](https://drive.google.com/file/d/12PD7j3W32QiHQVJhubAGuYP6NshRGKFQ/view?usp=sharing)
 
 ## 🏗️ Architecture
 
@@ -31,12 +34,12 @@ This project consists of three repositories:
 ### Tech Stack
 
 - **Frontend**: React.js, Redux, CSS
-- **Backend**: Node.js, Express.js, MongoDB (mostly on Aggregations)
+- **Backend**: Node.js, Express.js, MongoDB (with Aggregation Pipeline)
 - **Scraper**: Python, Playwright (Web Scraping), YouTube Data API
 
 ## 📊 Data Flow & Scraping Process
 
-### Contest Data Scraping
+### Contest Data Scraping (Ready but pending deployment)
 
 1. The scraper fetches contest data from CodeChef, CodeForces, and LeetCode
 2. It compares newly scraped data with existing data in local JSON files
@@ -54,7 +57,6 @@ This project consists of three repositories:
 3. The scraper fetches YouTube video links for these contests
 4. Videos are sorted by view count to prioritize high-quality solutions
 5. Contest records are updated with the YouTube solution links
-6. This data is stored in `need_upload.json` before being committed to the database
 
 ## 🔍 Filtering System
 
@@ -72,20 +74,13 @@ The application implements a comprehensive filtering system that uses search par
 
 The backend uses MongoDB's aggregation framework for efficient data processing and retrieval, ensuring that the application remains performant even with large datasets.
 
-## 🔄 Optimization
-
-- **24-Hour Scrape Cycle**: The scraper runs once every 24 hours to minimize unnecessary API calls
-- **Smart YouTube Fetching**: Solution videos are fetched after a 24-hour delay to ensure quality content
-- **Two-Attempt System**: The system makes up to two attempts to find solutions for each contest
-- **Incremental Updates**: Only modified fields are updated in the database to reduce overhead
-
 ## 🚀 Getting Started
 
 ### Prerequisites
 
 - Node.js (v14+)
 - MongoDB
-- YouTube Data API key (for solution scraping)
+- YouTube Data API key (for automatic solution generation)
 
 ### Installation
 
@@ -104,10 +99,26 @@ cd Contests-tracker-backend && npm install
 
 # For scraper (Python-based)
 cd Contests-scraper
-pip install -r requirements.txt  # or install required dependencies
+pip install -r requirements.txt
 ```
 
-3. Configure environment variables for each component (refer to each repository for specific requirements)
+3. Configure environment variables for each component:
+
+#### Frontend (.env)
+```
+REACT_APP_BACKEND_URL=your_backend_url
+```
+
+#### Backend (.env)
+```
+MONGODB_URI=your_mongodb_connection_string
+```
+
+#### Scraper (.env)
+```
+BACKEND_URL=your_backend_url
+YOUTUBE_API_KEY=your_youtube_api_key
+```
 
 4. Start the application:
 ```bash
@@ -119,19 +130,16 @@ npm start
 cd Contests-tracker-frontend
 npm start
 
-# Run scraper (or set up as a cron job)
+# Run scraper (manually for now)
 cd Contests-scraper
 python scraper.py
 ```
 
-## 📝 License
+## 📝 Deployment Plans
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+1. **Automated Scraping**: Configure cloud-based cron jobs to run the scraper every 24 hours
+2. **Monitoring**: Set up logging  for scraper performance
+3. **Error Handling**: Implement robust error recovery for the scraper service
 
-## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📞 Contact
-
-For any questions or feedback, please open an issue in the respective repository.
+This project is licensed under the MIT License.
