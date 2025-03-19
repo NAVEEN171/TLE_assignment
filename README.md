@@ -4,7 +4,7 @@ A full-stack MERN application that helps programmers keep track of coding contes
 
 ## 🚀 Live Link
 
-The application is currently deployed
+The application is currently deployed : 
 [https://contests-tracker-nu.vercel.app/](https://contests-tracker-nu.vercel.app/)
 
 
