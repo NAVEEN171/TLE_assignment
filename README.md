@@ -24,8 +24,8 @@ This project consists of three repositories:
 
 ### Tech Stack
 
-- **Frontend**: React.js, Redux, TailwindCSS
-- **Backend**: Node.js, Express.js, MongoDB (Aggregation Framework)
+- **Frontend**: React.js, Redux, CSS
+- **Backend**: Node.js, Express.js, MongoDB (mostly on Aggregations)
 - **Scraper**: Python, Playwright (Web Scraping), YouTube Data API
 
 ## 📊 Data Flow & Scraping Process
