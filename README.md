@@ -2,12 +2,12 @@
 
 A full-stack MERN application that helps programmers keep track of coding contests across multiple platforms, discover solutions, and manage their competitive programming journey.
 
-## 🚀 Current Deployment Status
+## 🚀 Live Link
 
-The application is currently deployed and functional with most features available at:
+The application is currently deployed
 [https://contests-tracker-nu.vercel.app/](https://contests-tracker-nu.vercel.app/)
 
-> **Note:** The automated 24-hour contest update scraping feature is implemented in code but not yet deployed to production. Contest data is currently being manually updated until the automated scraper deployment is completed.
+
 
 ## 🌟 Features
 
