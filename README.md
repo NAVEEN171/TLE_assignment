@@ -14,8 +14,8 @@ A full-stack MERN application that helps programmers keep track of coding contes
 - **Dark Mode Support**: Toggle between light and dark themes
 - **Fully Responsive**: Works seamlessly across all devices
 
-  ## Live Link
-  **url** -https://contests-tracker-nu.vercel.app/
+## Live Link
+**url** -https://contests-tracker-nu.vercel.app/
 
 ## Product Walkthrough Video
 **Product walkthrough link**:- https://drive.google.com/file/d/12PD7j3W32QiHQVJhubAGuYP6NshRGKFQ/view?usp=sharing
