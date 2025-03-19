@@ -111,12 +111,12 @@ REACT_APP_BACKEND_URL=your_backend_url
 
 #### Backend (.env)
 ```
-MONGODB_URI=your_mongodb_connection_string
+MONGODB_URL=your_mongodb_connection_string
 ```
 
 #### Scraper (.env)
 ```
-BACKEND_URL=your_backend_url
+MONGODB_URL=your_mongodb_connection_string
 YOUTUBE_API_KEY=your_youtube_api_key
 ```
 
