@@ -15,7 +15,7 @@ A full-stack MERN application that helps programmers keep track of coding contes
 - **Fully Responsive**: Works seamlessly across all devices
 
 ## Live Link
-**url** -https://contests-tracker-nu.vercel.app/
+https://contests-tracker-nu.vercel.app/
 
 ## Product Walkthrough Video
 **Product walkthrough link**:- https://drive.google.com/file/d/12PD7j3W32QiHQVJhubAGuYP6NshRGKFQ/view?usp=sharing
