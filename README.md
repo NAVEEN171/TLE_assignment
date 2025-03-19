@@ -138,8 +138,7 @@ python scraper.py
 ## 📝 Deployment Plans
 
 1. **Automated Scraping**: Configure cloud-based cron jobs to run the scraper every 24 hours
-2. **Monitoring**: Set up logging  for scraper performance
-3. **Error Handling**: Implement robust error recovery for the scraper service
+
 
 
 This project is licensed under the MIT License.
