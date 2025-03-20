@@ -54,7 +54,7 @@ This project consists of three repositories:
 2. It filters for contests that:
    - Started more than 24 hours ago
    - Have been attempted for solutions fewer than twice
-3. The scraper fetches YouTube video links for these contests
+3. The youtube links are fetched matching the search parameters like platform name and contest name , solutions in youtube using youtube data api
 4. Videos are sorted by view count to prioritize high-quality solutions
 5. Contest records are updated with the YouTube solution links
 
