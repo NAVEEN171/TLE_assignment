@@ -50,7 +50,7 @@ This project consists of three repositories:
 
 ### YouTube Solutions Gathering
 
-1. After contest data is scraped, the system retrieves past contests from the database
+1. After contest data is scraped and uploaded with database, the system retrieves past contests from the database
 2. It filters for contests that:
    - Started more than 24 hours ago
    - Have been attempted for solutions fewer than twice
