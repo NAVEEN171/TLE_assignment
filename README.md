@@ -20,8 +20,6 @@ The application is currently deployed :
 
 
 
-## Product Walkthrough
-**Product walkthrough video**: [Watch here](https://drive.google.com/file/d/12PD7j3W32QiHQVJhubAGuYP6NshRGKFQ/view?usp=sharing)
 
 ## 🏗️ Architecture
 
